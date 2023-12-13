@@ -6,20 +6,18 @@ import Home from '../Home/home';
 
 
 
-class App extends Component{
+function App (){
 
-render(){
   return(
     <Router>
       <Header></Header>
       <Routes>
-        <Route path="/home" element={<Home/>}/>
+        <Route path='/' element={<Main/>}>
         <Route path="/" element={<Home/>}/>
+        </Route>
       </Routes>
     </Router>
     
-  )}
-
+  )
 }
-
 export default App;
