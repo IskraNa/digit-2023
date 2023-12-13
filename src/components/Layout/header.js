@@ -1,28 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Navbar, Container, Nav } from 'react-bootstrap';
 import logo from "../../images/logo.png";
-import { Link } from 'react-router-dom';
 
-function Header(){
+function Header() {
   return (
-    <div className="row">
-    <nav className="navbar navbar-expand-lg bg-dark">
-      <Link  className="navbar-brand col-4 ms-5" to="/">
-        <img src={logo} alt="logo" className="w-50" />
-      </Link>
-      <div className="collapse navbar-collapse" id="navList">
-        <ul className="navbar-nav me-0 col-6 offset-6"> 
-          <li className="fs-1 fw-bold nav-item">
-            <Link className="nav-link" to="/" style={{ color: '#CC5C29' , fontFamily: ''}}>ДОМА</Link>
-          </li>
-          <li className="fs-1 fw-bold nav-item">
-            <Link className="nav-link" to="/menu" style={{ color: '#CC5C29' }}>МЕНИ</Link>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
-); 
-}
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Container>
+        {/* Logo */}
+        <Navbar.Brand className="w-50">
+          <img
+            src={logo}
+            alt="logo"
+            className="w-50 d-inline-block align-top img-fluid"
+          />
+        </Navbar.Brand>
 
+        {/* Toggle Button for Responsive Design */}
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" />
+
+        {/* Navigation Links */}
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/"  className="fs-1 fw-bold" style={{ color: '#CC5C29', fontFamily: '' }}>ДОМА</Nav.Link>
+            <Nav.Link as={Link} to="/menu" className="fs-1 fw-bold" style={{ color: '#CC5C29' }}>МЕНИ</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    
+    )
+}
 
 export default Header;
