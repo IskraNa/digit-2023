@@ -2,12 +2,24 @@
   margin-top: 100px;
 }
 
-.rowHome2{
+.fancy-carousel-wrapper {
   margin-top: 300px;
   margin-bottom: 200px;
   padding: 50px 0;
-  border: 3px black solid;
-  background-color: #FB934C;
+  border: 8px solid #FB934C; 
+  border-radius: 5px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+  background: linear-gradient(45deg, #D45C2B, #CC5C29); 
+  position: relative; 
+
+  animation: pulsate 2s infinite alternate;
+}
+
+@keyframes pulsate {
+  to {
+    border-color: #040404; 
+  }
 }
 
 .ul1{
@@ -17,3 +29,32 @@
 .ul1 li {
   padding: 0 4px;
 }
+
+a.fs-1.fw-bold.nav-link-custom.nav-link{
+  color: #CC5C29 ;
+  text-decoration: none;
+}
+
+a.fs-1.fw-bold.nav-link-custom.nav-link:hover{
+  color: #FB934C;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+a.fs-4.mb-2.text-decoration-none.footer-link{
+  color: white;
+  text-decoration: none;
+}
+
+a.fs-4.mb-2.text-decoration-none.footer-link:hover{
+  color:aliceblue;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+#root > div > footer > div > div > div:nth-child(1) > ul > {
+  text-decoration: none;
+} 
+
+#root > div > footer > div > div > div:nth-child(1) > ul > li > a.text-light:hover {
+  color:aliceblue;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+} 

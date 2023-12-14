@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
+import restaurant from '../../images/restaurant.jpg';
 
 function Home () {
         return (
@@ -9,30 +10,30 @@ function Home () {
               <div className="row">
                 <div className="col-md-6 order-md-2">
                   <img
-                    src="https://i.ytimg.com/vi/jcqwBoQwB6Y/maxresdefault.jpg"
+                    src={restaurant}
                     alt="restaurantPhoto"
                     className="w-100 rounded"
                   />
                 </div>
-                <div className="col-md-6 order-md-1">
-                  <h4 className="text-dark fw-bold">ВкусоДОМ</h4>
-                  <h6>Ви фали манџа, сарма...?</h6>
-                  <p className="m-3">
+                <div className="col-md-6 order-md-1 mt-2">
+                  <h3 className="text-dark fw-bold pb-2">ВкусоДОМ</h3>
+                  <h5>Ви фали манџа, сарма...?</h5>
+                  <p className="fs-5 m-3">
                     Немате време за готвење или ви фали јадењето од мама, мирисот
                     на <span className="fw-bold" style={{ color: '#CC5C29' }}>ДОМОТ</span>,
                     вкусот на свежо испечен леб на баба, тогаш се наоѓате на правото
                     место.
                   </p>
-                  <p className="m-3">
+                  <p className="fs-5 m-3">
                     Ние нудиме домашно зготвени, не многу брзи (за вас брзи) јадења,
                     кои ги правиме со голема љубов и неизмерна посветеност.
                   </p>
-                  <p className="m-3">Чувствувајте се како дома со нас.</p>
+                  <p className="fs-5 m-3">Чувствувајте се како дома со нас.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="rowHome2">
+          <div className="fancy-carousel-wrapper">
             <div className="col-md-12">
             <Carousel className="mx-auto">
               <Carousel.Item>
