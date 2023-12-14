@@ -2,6 +2,18 @@
   margin-top: 100px;
 }
 
+.responsive-container {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+.responsive-gif {
+  max-width: 100%;
+  height: auto;
+}
+
+
 .fancy-carousel-wrapper {
   margin-top: 300px;
   margin-bottom: 200px;
@@ -58,3 +70,7 @@ a.fs-4.mb-2.text-decoration-none.footer-link:hover{
   color:aliceblue;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 } 
+
+.borderContact {
+  border: 4px solid #FB934C; 
+}

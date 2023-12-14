@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import restaurant from '../../images/restaurant.jpg';
+import banner from '../../images/ezgif.com-video-to-gif-converted.gif';
 
 function Home () {
         return (
@@ -33,6 +34,11 @@ function Home () {
               </div>
             </div>
           </div>
+          <div  className="mx-auto col-md-8  responsive-container" >
+            <img src={banner} alt="Banner"  className="responsive-gif"/>
+      </div>
+
+          
           <div className="fancy-carousel-wrapper">
             <div className="col-md-12">
             <Carousel className="mx-auto">
