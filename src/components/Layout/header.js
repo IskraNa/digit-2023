@@ -8,11 +8,13 @@ function Header() {
     <Navbar bg="dark" expand="lg" variant="dark">
       <Container>
         <Navbar.Brand className="w-50">
+          <Link to="/">
           <img
             src={logo}
             alt="logo"
             className="w-50 d-inline-block align-top img-fluid"
           />
+          </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" className="ml-auto" />
         <Navbar.Collapse id="responsive-navbar-nav">

@@ -22,7 +22,7 @@ function Footer(){
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-light">
+                  <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-primary">
                     <i className="bi bi-instagram fs-3"></i>
                   </Link>
                 </li>

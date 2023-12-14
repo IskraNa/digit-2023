@@ -1,0 +1,184 @@
+{
+    "data":[
+	{
+		"id": "Сарма",
+		"name": "Сарма",
+		"price": "200",
+		"imageUrl": "https://moirecepti.mk/content/uploads/2022/02/20220207_155922-95923e-800x672.jpg",
+		"category": "Мрсно",
+		"ingredients":["кисела зелка", "мелено месо", "кромид", "ориз."],
+		"grams":"",
+		"quantity":""
+	},
+	{
+		"id": "ТавчеГравче",
+		"name": "Тавче гравче",
+		"price": "150",
+		"imageUrl": "https://moirecepti.mk/content/uploads/2015/03/nas-df5546-800x600.jpg",
+		"category": "Посно",
+		"ingredients":["грав", "црвени пиперки", "кромид", " суво нане."],
+		"grams":"",
+		"quantity":""
+	},
+	{
+		"id": "Вариво",
+		"name": "Вариво",
+		"price": "220",
+		"imageUrl": "https://adiblogmk.com/wp-content/uploads/2019/02/1ad2281c699512fc5235bca368b4c6d8-480x538.jpg",
+		"category": "Мрсно",
+		"ingredients":["зелка", "јунешко месо", "чадена сланина", "кромид", "мешавина од сув зеленчук."],
+		"grams":"",
+		"quantity":""
+	},
+	{
+		"id": "СелскоМесо",
+		"name": "Селско месо",
+		"price": "270",
+		"imageUrl": "https://moemeni.mk/wp-content/uploads/2017/11/selsko-meso-so-chadeno-svinsko.jpg",
+		"category": "Мрсно",
+		"ingredients":["свинско месо", "свежу шампињони", "кашкавал", "кромид", "зачини."],
+		"grams":"",
+		"quantity":""
+	},
+	{
+		"id": "Пастрмка",
+		"name": "Пастрмка",
+		"price": "250",
+		"imageUrl": "https://moirecepti.mk/content/uploads/2020/05/viber_image_2020-05-01_16-35-45-3c54d6-800x600.jpg",
+		"category": "Посно",
+		"ingredients":["пастрмка", "компир", "лимон", "бадеми", "магдонос."],
+		"grams":"",
+		"quantity":""
+	},
+	{
+		"id": "Пастрмајлија",
+		"name": "Пастрмајлија",
+		"price": "120",
+		"imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/%D0%9F%D0%B0%D1%81%D1%82%D1%80%D0%BC%D0%B0%D1%98%D0%BB%D0%B8%D1%98%D0%B0.jpg/250px-%D0%9F%D0%B0%D1%81%D1%82%D1%80%D0%BC%D0%B0%D1%98%D0%BB%D0%B8%D1%98%D0%B0.jpg",
+		"category": "Мрсно",
+		"ingredients":["свинско месо/пилешко месо", "феферони", "кисели краставички."],
+		"grams":"",
+		"quantity":""
+	}, 
+	{
+		"id": "КомпирМанџа",
+		"name": "Компир манџа",
+		"price": "160",
+		"imageUrl": "https://www.ubavinaizdravje.mk/wp-content/uploads/2020/05/kompir-mandza-printscreen-youtube.jpg",
+		"category": "Мрсно",
+		"ingredients":["свинско месо/пилешко месо/јунешко месо", "компир", "кромид", "моркови", "домат."],
+		"grams":"",
+		"quantity":""
+	}, 
+	{
+		"id": "ПоснаБоранија",
+		"name": "Посна боранија",
+		"price": "190",
+		"imageUrl": "https://vistina.com.mk/wp-content/uploads/2023/04/boranija.jpg",
+		"category": "Посно",
+		"ingredients":["боранија", "компир", "моркови", "домати", "зачини."],
+		"grams":"",
+		"quantity":""
+	}, 
+	{	
+		"id": "МакедонскиКачамак",
+		"name": "Македонски качамак",
+		"price": "140",
+		"imageUrl": "https://www.slobodenpecat.mk/wp-content/uploads/2022/01/recept-kacamak-profimedia.jpg",
+		"category": "Мрсно",
+		"ingredients":["пченкарно брашно", "свинско месо", "чадена сланина."],
+		"grams":"",
+		"quantity":""
+	}, 
+	{
+		"id": "ЗелникСоПраз",
+		"name": "Зелник со праз",
+		"price": "130",
+		"imageUrl": "https://i.ytimg.com/vi/Bs97js22B54/maxresdefault.jpg",
+		"category": "Посно",
+		"ingredients":["праз"],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "Сутлијач",
+		"name": "Сутлијач",
+		"price": "130",
+		"imageUrl": "https://puls24.mk/wp-content/uploads/2018/03/sutlijacc-turski_original.jpg",
+		"category": "Благо",
+		"ingredients":["ориз", "млеко", "цимет."],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "Трилече",
+		"name": "Трилече",
+		"price": "130",
+		"imageUrl": "https://www.slobodenpecat.mk/wp-content/uploads/2022/01/recept-trilece-%D0%A4%D0%BE%D1%82%D0%BE-%D0%A4%D0%B5%D1%98%D1%81%D0%B1%D1%83%D0%BA-%D0%A2%D1%80%D0%B8%D0%BB%D0%B5%D1%87%D0%B5.jpg",
+		"category": "Благо",
+		"ingredients":["кора", "млеко", "карамел."],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "ШопскаСалата",
+		"name": "Шопска Салата",
+		"price": "130",
+		"imageUrl": "https://sezahrana.mk/wp-content/uploads/2015/02/%D1%88%D0%BE%D0%BF%D1%81%D0%BA%D0%B0-%D1%81%D0%B0%D0%BB%D0%B0%D1%82%D0%B01.jpg",
+		"category": "Салата",
+		"ingredients":["домат", "краставица", "мацлинки", "сирење", "кромид."],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "ВитаминскаСалата",
+		"name": "Витаминска Салата",
+		"price": "130",
+		"imageUrl": "https://reporter.mk/wp-content/uploads/2019/03/1480a550bf96419d81d4e60782739106_w790.jpg",
+		"category": "Салата",
+		"ingredients":["цвекло", "морков", "зелка."],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "Таратур",
+		"name": "Таратур",
+		"price": "130",
+		"imageUrl": "https://sezahrana.mk/wp-content/uploads/2017/09/taratur-2.jpg",
+		"category": "Салата",
+		"ingredients":["јогурт", "краставица", "лук", "копар."],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "ИзворскаВода",
+		"name": "Изворска Вода",
+		"price": "30",
+		"imageUrl": "https://prova.mk/wp-content/uploads/2021/01/V092-500x500-1.jpg",
+		"category": "Пијалок",
+		"ingredients":["вода"],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "КокаКола",
+		"name": "Кока Кола",
+		"price": "50",
+		"imageUrl": "https://verodrive.vero.com.mk/wp-content/uploads/2020/04/2500435120koka20kola201.75l.jpg",
+		"category": "Пијалок",
+		"ingredients":["сок"],
+		"grams":"",
+		"quantity":""	
+	},
+	{
+		"id": "Боза",
+		"name": "Боза",
+		"price": "20",
+		"imageUrl": "https://glamur.mk/wp-content/uploads/2016/02/2016_02_02_boza1.jpg",
+		"category": "Пијалок",
+		"ingredients":["сок"],
+		"grams":"",
+		"quantity":""	
+	}
+    ]
+}

@@ -2,20 +2,8 @@
   margin-top: 100px;
 }
 
-.responsive-container {
-  max-width: 100%;
-  width: 100%;
-  height: auto;
-}
-
-.responsive-gif {
-  max-width: 100%;
-  height: auto;
-}
-
-
 .fancy-carousel-wrapper {
-  margin-top: 300px;
+  margin-top: 100px;
   margin-bottom: 200px;
   padding: 50px 0;
   border: 8px solid #FB934C; 
@@ -49,7 +37,7 @@ a.fs-1.fw-bold.nav-link-custom.nav-link{
 
 a.fs-1.fw-bold.nav-link-custom.nav-link:hover{
   color: #FB934C;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
 a.fs-4.mb-2.text-decoration-none.footer-link{
@@ -58,19 +46,50 @@ a.fs-4.mb-2.text-decoration-none.footer-link{
 }
 
 a.fs-4.mb-2.text-decoration-none.footer-link:hover{
-  color:aliceblue;
+  color: #FB934C;;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
 
-#root > div > footer > div > div > div:nth-child(1) > ul > {
+#root > div > footer > div > div > div:nth-child(1) > ul >  {
   text-decoration: none;
 } 
 
-#root > div > footer > div > div > div:nth-child(1) > ul > li > a.text-light:hover {
-  color:aliceblue;
+#root > div > footer > div > div > div:nth-child(1) > ul > li > a > i  {
+  text-decoration: none;
+  color: white;
+} 
+
+#root > div > footer > div > div > div:nth-child(1) > ul > li > a > i:hover {
+  color:#FB934C;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 } 
 
+#root > div > div > div.mx-auto.col-md-12.responsive-container.text-center{
+  margin-top: 100px;
+}
+
+#root > div > div > div > img{
+  width: 100%; 
+  height: 150px; 
+  object-fit: cover; 
+}
+
+#root > div > div > div > div > div.mb-3 > input {
+  width: 60px;
+  display: inline;
+  margin-left: 30px;
+}
+
+#root > div > div > div > div > div.w-100 > div > div > #gramsSlider{
+  margin-top: -15px;
+  margin-left: 18px;
+}
+
+#root > div > div > div:hover{
+  background-color: #e28f58;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
 .borderContact {
-  border: 4px solid #FB934C; 
+  border: 4px solid #11100f;
 }

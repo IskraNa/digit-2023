@@ -1,11 +1,11 @@
 import React from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import restaurant from '../../images/restaurant.jpg';
-import banner from '../../images/ezgif.com-video-to-gif-converted.gif';
+import banner from '../../images/banner.gif';
 
 function Home () {
         return (
-          <div className="container">
+        <div className="container">
           <div className="rowHome1">
             <div className="mt-1 text-center">
               <div className="row">
@@ -34,11 +34,9 @@ function Home () {
               </div>
             </div>
           </div>
-          <div  className="mx-auto col-md-8  responsive-container" >
-            <img src={banner} alt="Banner"  className="responsive-gif"/>
-      </div>
-
-          
+          <div className="mx-auto col-md-12 responsive-container text-center" >
+            <img src={banner} alt="Banner"  className="responsive-gif img-fluid w-100"/>
+          </div>
           <div className="fancy-carousel-wrapper">
             <div className="col-md-12">
             <Carousel className="mx-auto">
