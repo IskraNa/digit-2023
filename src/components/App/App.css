@@ -31,7 +31,7 @@
 }
 
 a.fs-1.fw-bold.nav-link-custom.nav-link{
-  color: #CC5C29 ;
+  color: #CC5C29;
   text-decoration: none;
 }
 
@@ -85,7 +85,15 @@ a.fs-4.mb-2.text-decoration-none.footer-link:hover{
   margin-left: 18px;
 }
 
-#root > div > div > div:hover{
+#root > div > div > div.rowHome1 > div > div>  div:nth-child(2):hover, 
+#root > div > div > div.rowHome2:hover,
+#root > div > div > div.rowHome3:hover{
+  background-color: #e28f58;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.menu:hover
+{
   background-color: #e28f58;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
 }
@@ -93,3 +101,50 @@ a.fs-4.mb-2.text-decoration-none.footer-link:hover{
 .borderContact {
   border: 4px solid #11100f;
 }
+
+.row > .pageNotFound{
+  margin: auto auto;
+  text-align: center;
+}
+
+.pageNotFound > div:nth-child(1),
+.pageNotFound > div:nth-child(2),
+.pageNotFound > div:nth-child(3){
+  font-size: 200px;
+}
+
+div.policyRow{
+  background-color: #ffffffed;
+  text-align: justify;
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.policyRow:hover{
+  background-color:#e28f58;
+}
+
+h1.policyTitle{
+  margin: 15px 0 15px 0;
+}
+
+.policy{
+  padding: 2px;
+}
+
+p.policy:nth-child(1){
+  margin-top: 3px;
+}
+
+#root > div > div > div.rowHome1 > div > div>  div:nth-child(2){
+  margin-top: -6px;
+}
+
+svg.cart{
+  margin-top: 11px;
+  padding: 3px;
+}
+
+svg.cart:hover{
+  background-color: #CC5C29;
+} 

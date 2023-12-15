@@ -7,37 +7,37 @@ function Home () {
         return (
         <div className="container">
           <div className="rowHome1">
-            <div className="mt-1 text-center">
+            <div className="text-center">
               <div className="row">
-                <div className="col-md-6 order-md-2">
+                <div className="col-md-6 order-md-2 mb-2">
                   <img
                     src={restaurant}
                     alt="restaurantPhoto"
                     className="w-100 rounded"
                   />
                 </div>
-                <div className="col-md-6 order-md-1 mt-2">
-                  <h3 className="text-dark fw-bold pb-2">ВкусоДОМ</h3>
+                <div className="col-md-6 order-md-1">
+                  <h3 className="text-dark fw-bold pb-1">ВкусоДОМ</h3>
                   <h5>Ви фали манџа, сарма...?</h5>
-                  <p className="fs-5 m-3">
-                    Немате време за готвење или ви фали јадењето од мама, мирисот
+                  <p className="fs-4 m-3">
+                    Немате време а готвење или ви фали јадењето од мама, мирисот
                     на <span className="fw-bold" style={{ color: '#CC5C29' }}>ДОМОТ</span>,
                     вкусот на свежо испечен леб на баба, тогаш се наоѓате на правото
                     место.
                   </p>
-                  <p className="fs-5 m-3">
+                  <p className="fs-4 m-3">
                     Ние нудиме домашно зготвени, не многу брзи (за вас брзи) јадења,
                     кои ги правиме со голема љубов и неизмерна посветеност.
                   </p>
-                  <p className="fs-5 m-3">Чувствувајте се како дома со нас.</p>
+                  <p className="fs-4 m-3">Чувствувајте се како дома со нас.</p>
                 </div>
               </div>
             </div>
           </div>
-          <div className="mx-auto col-md-12 responsive-container text-center" >
+          <div className="rowHome2 mx-auto col-md-12 responsive-container text-center" >
             <img src={banner} alt="Banner"  className="responsive-gif img-fluid w-100"/>
           </div>
-          <div className="fancy-carousel-wrapper">
+          <div className="rowHome3 fancy-carousel-wrapper">
             <div className="col-md-12">
             <Carousel className="mx-auto">
               <Carousel.Item>

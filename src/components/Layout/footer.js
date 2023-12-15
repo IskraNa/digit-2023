@@ -12,22 +12,22 @@ function Footer(){
               <h4>Заследете не</h4>
               <ul className="ul1 list-unstyled d-flex pt-3">
                 <li>
-                  <Link to="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-light">
+                  <Link to="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="">
                     <i className="bi bi-facebook fs-3"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-light">
+                  <Link to="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="">
                     <i className="bi bi-twitter fs-3"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-primary">
+                  <Link to="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="">
                     <i className="bi bi-instagram fs-3"></i>
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-light">
+                  <Link to="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" className="">
                     <i className="bi bi-linkedin fs-3"></i>
                   </Link>
                 </li>

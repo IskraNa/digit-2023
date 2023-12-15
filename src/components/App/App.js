@@ -5,6 +5,7 @@ import PageNotFound from '../PageNotFound/pageNotFound';
 import Layout from '../Layout/layout';
 import Contact from '../Contact/contact';
 import Menu from '../Menu/menu';
+import Policy from '../Policy/policy';
 
 
 function App(){
@@ -15,7 +16,8 @@ function App(){
         <Route path='/' element={<Layout/>}>
           <Route path='/' element={<Home/>}/>
           <Route path='/contact' element={<Contact/>}/>
-           <Route path='/menu' element={<Menu/>}/> 
+          <Route path='/menu' element={<Menu/>}/> 
+          <Route path='/policy' element={<Policy/>}/>
         </Route>
         <Route path='*' element={<PageNotFound/>}/>
       </Routes>
