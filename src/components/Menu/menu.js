@@ -4,20 +4,111 @@ import { useState } from "react";
 import { useEffect } from "react";
 import data  from '../../db/db.json'
 const Menu = () => {
-    const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([]);
+  const [sortOrder, setSortOrder] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
-    useEffect(()=>{
-        setProducts(data.data)
-    },[])
+  useEffect(() => {
+    setProducts(data.data);
+  }, []);
 
-    console.log(products)
-  
-    return (
-        <div className="row w-75 mx-auto my-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
-          {products.map(product => (
-             <Product key={product.id} {...product} className="col mb-2"/>
-            ))}
-        </div>
+  const sortItems = () => {
+    let sortedItems = [...data.data];
+
+    if (selectedCategory !== "all") {
+      sortedItems = sortedItems.filter((item) => item.category === selectedCategory);
+    }
+
+    sortedItems.sort((a, b) => {
+      if (sortOrder) {
+        return a.price - b.price;
+      } else {
+        return b.price - a.price;
+      }
+    });
+
+    setProducts(sortedItems);
+  };
+
+  const handleSortOrderChange = (ascending) => {
+    setSortOrder(ascending);
+    sortItems();
+  };
+
+  const handleCategoryChange = (event) => {
+    const newCategory = event.target.value;
+    setSelectedCategory(newCategory);
+    setSortOrder(true);
+
+    setProducts((prevProducts) => {
+      if (newCategory === "all") {
+        return data.data;
+      } else {
+        let sortedItems = data.data.filter((item) => item.category === newCategory);
+
+        sortedItems.sort((a, b) => {
+          if (sortOrder) {
+            return a.price - b.price;
+          } else {
+            return b.price - a.price;
+          }
+        });
+
+        return sortedItems;
+      }
+    });
+  };
+
+  return (
+    <div>
+    <div className="m-5 row d-flex align-items-center fs-5">
+      <div className="col-md-2">
+        <label className="m-1 p-2">
+          <input
+            type="radio"
+            name="sortOrder"
+            value="ascending"
+            checked={sortOrder}
+            onChange={() => handleSortOrderChange(true)}
+          />
+          Најниска цена
+        </label>
+      </div>
+      <div className="col-md-4">
+        <label className="m-1 p-2">
+          <input
+            type="radio"
+            name="sortOrder"
+            value="descending"
+            checked={!sortOrder}
+            onChange={() => handleSortOrderChange(false)}
+          />
+          Највисока цена
+        </label>
+      </div>
+      <div className="col-md-6    p-2  order-md-first ">
+        <label>
+          Селектирај категорија:
+          <select value={selectedCategory} onChange={handleCategoryChange}>
+            <option value="all">Сите</option>
+            <option value="Мрсно">Мрсно</option>
+            <option value="Посно">Посно</option>
+            <option value="Пијалок">Пијалок</option>
+            <option value="Салата">Салата</option>
+            <option value="Благо">Благо</option>
+          </select>
+        </label>
+      </div>
+      </div>
+
+      
+
+      <div className="row w-75 mx-auto my-5 row-cols-1 row-cols-md-2 row-cols-lg-3">
+        {products.map((product) => (
+          <Product key={product.id} {...product} className="col mb-2" />
+        ))}
+      </div>
+    </div>
       );
-}
+    };
 export default Menu;
