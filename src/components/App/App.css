@@ -68,13 +68,14 @@ a.fs-4.mb-2.text-decoration-none.footer-link:hover{
   margin-top: 100px;
 }
 
-#root > div > div > div > img{
+#root > div > div > div.row.w-75.mx-auto.my-5.row-cols-1.row-cols-md-2.row-cols-lg-3 > div > img.image{
   width: 100%; 
-  height: 150px; 
+  max-height: 150px; 
   object-fit: cover; 
 }
 
-#root > div > div > div > div > div.mb-3 > input {
+#root >
+ div > div > div > div > div.mb-3 > input {
   width: 60px;
   display: inline;
   margin-left: 30px;
@@ -148,3 +149,8 @@ svg.cart{
 svg.cart:hover{
   background-color: #CC5C29;
 } 
+
+#root > div > div > div.col-md-4 > div.cartList{
+  margin-top: 250px;
+
+}

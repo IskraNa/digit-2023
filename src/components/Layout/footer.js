@@ -61,6 +61,12 @@ function Footer(){
               </div>
             </Col>
           </Row>
+          <Row className="mt-5">
+          <Col xs={12}>
+            <p className="text-light">© Digit - 2023 Three Blind Mice. All rights reserved.</p>
+          </Col>
+        </Row>
+
         </Container>
       </footer>
     );
