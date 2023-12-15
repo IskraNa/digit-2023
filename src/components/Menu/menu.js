@@ -81,7 +81,7 @@ const Menu = () => {
   return (
     <div>
       <div className="m-5 row d-flex align-items-center fs-5">
-        <div className="col-md-2">
+        <div className="col-md-3">
           <label className="m-1 p-2">
             <input
               type="radio"
@@ -90,7 +90,7 @@ const Menu = () => {
               checked={sortOrder}
               onChange={() => handleSortOrderChange(true)}
              />
-              Највисока цена
+              Најниска цена
           </label>
         </div>
         <div className="col-md-4">
@@ -102,13 +102,13 @@ const Menu = () => {
               checked={!sortOrder}
               onChange={() => handleSortOrderChange(false)}
             />
-            Најниска цена
+            Највисока цена
           </label>
         </div>
-        <div className="col-md-6 p-2 order-md-first ">
-          <label>
-            Селектирај категорија:
-            <select value={selectedCategory} onChange={handleCategoryChange}>
+        <div className="col-md-5 p-2 order-md-first ">
+          <label className="">
+            Селектирај категорија:     
+            <select  className="ms-2" value={selectedCategory} onChange={handleCategoryChange}>
               <option value="all">Сите</option>
               <option value="Мрсно">Мрсно</option>
               <option value="Посно">Посно</option>
